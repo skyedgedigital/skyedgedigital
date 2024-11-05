@@ -31,11 +31,11 @@ const AppDevelopment = () => {
   };
 
   return (
-    <div className='text-white p-4 sm:p-8 lg:p-16 flex flex-col gap-8 lg:gap-16'>
-      <div className='web-development-section relative flex flex-col md:flex-row-reverse md:gap-16 justify-between items-center min-h-[80vh]'>
+    <div className='text-white p-4 sm:p-8 lg:p-16 flex flex-col gap-8 lg:gap-16 '>
+      <div className='web-development-section relative flex flex-col md:flex-row-reverse md:gap-16 lg:gap-32 justify-between items-center min-h-[80vh]'>
         <div className='absolute top-0 left-1/2 -translate-x-1/2 w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] lg:w-[45px] lg:h-[45px] flex justify-center items-center text-primary'>
           <p className='text-white z-10 text-2xl sm:text-2xl lg:text-3xl'>2</p>
-          <span className='rotate absolute left-0 right-0 top-0 bottom-0 bg-primary [animation:spin_6s_linear_infinite]'></span>
+          <span className='rotate absolute left-0 right-0 top-0 bottom-0 bg-primary animate-spin-slow'></span>
         </div>
 
         <div className='service-description flex-1 flex flex-col gap-6 sm:gap-8 lg:gap-12 mt-12 lg:mt-0'>
@@ -47,7 +47,7 @@ const AppDevelopment = () => {
             <h3 className='text-xl sm:text-2xl lg:text-3xl border-b-primary border-b-[1px] w-fit'>
               App Development
             </h3>
-            <p className='text-sm sm:text-lg lg:text-2xl text-[#e8e8e8]'>
+            <p className='text-sm sm:text-lg lg:text-2xl text-[#cecece]'>
               We develop mobile apps that not only but also deliver exceptional
               user experiences. Whether you need native or cross-platform app,
               we ensure your app is functional, scalable, and designed to engage
@@ -80,11 +80,10 @@ const AppDevelopment = () => {
           </div>
         </div>
 
-        <div className='images  relative w-full  h-[250px] sm:w-[450px] sm:h-[300px] lg:w-[45%] lg:h-[450px] mt-8 lg:mt-0'>
+        <div className='images  relative w-full  h-[250px] sm:w-[450px] sm:h-[300px] lg:w-[45%] lg:h-[450px] mt-8 lg:mt-0 '>
           <motion.div
-            initial={{ scale: 1.1 }}
+            initial={{ scale: 1.2 }}
             whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
             transition={{
               duration: 0.8,
               ease: [0.44, 0, 0.56, 1],
@@ -98,9 +97,8 @@ const AppDevelopment = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ scale: 0.6 }}
+            initial={{ scale: 0.5 }}
             whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
             transition={{
               duration: 0.8,
               ease: [0.44, 0, 0.56, 1],

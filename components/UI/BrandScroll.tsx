@@ -3,26 +3,31 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ShapeU from '@/assets/clients-logo/ShapeU.png';
 import ThePihu from '@/assets/clients-logo/ThePihu.png';
+import SunshineWellness from '@/assets/clients-logo/Sunshine.png';
+import DMTransport from '@/assets/clients-logo/DMTransport.jpeg';
+import MindmapAssociates from '@/assets/clients-logo/MindmapAssociates.jpeg';
 
 const BrandScroll = () => {
   const brands = [
     { id: 1, image: ShapeU, alt: 'Shape You' },
     { id: 2, image: ThePihu, alt: 'The Pihu' },
+    { id: 3, image: SunshineWellness, alt: 'Sunshine Wellness' },
+    { id: 4, image: DMTransport, alt: 'DM Transport' },
+    { id: 5, image: MindmapAssociates, alt: 'Mindmap Associates' },
   ];
 
   return (
-    <section className=' w-full container mx-auto text-center justify-center items-center flex flex-col gap-8 py-8'>
+    <section className=' w-full container mx-auto text-center justify-center items-center flex flex-col gap-12 py-8'>
       <h2 className='text-3xl font-bold text-white font-lexend'>
         Trusted by Brands
       </h2>
 
       {/* Updated scrolling container */}
-      <div className='relative w-full overflow-hidden'>
-        <div className='flex w-[200%] animate-scroll'>
-          {/* First set of brands */}
-          <div className='flex w-1/2 justify-around'>
+      <div className='relative w-full '>
+        <div className='flex w-[200%] '>
+          <div className='flex w-1/2 justify-around animate-scroll'>
             {brands.map((brand) => (
-              <div key={brand.id} className='flex-shrink-0 mx-4'>
+              <div key={brand.id} className='flex-shrink-0 mx-4 '>
                 <Image
                   src={brand.image}
                   alt={brand.alt}
@@ -41,7 +46,7 @@ const BrandScroll = () => {
             ))}
           </div>
           {/* Second set of brands */}
-          <div className='flex w-1/2 justify-around'>
+          <div className='flex w-1/2 justify-around animate-scroll'>
             {brands.map((brand) => (
               <div key={`${brand.id}-clone`} className='flex-shrink-0 mx-4'>
                 <Image

@@ -15,15 +15,21 @@ const config: Config = {
       fontFamily: {
         urbanist: ['var(--font-urbanist)', 'sans-serif'],
         lexend: ['var(--font-lexend)', 'sans-serif'],
+        'red-hat-display': ['var(--font-red-hat-display)'],
       },
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
         },
       },
       animation: {
-        scroll: 'scroll 15s linear infinite',
+        scroll: 'scroll 20s linear infinite',
+        'spin-slow': 'spin 6s linear infinite',
       },
     },
   },
