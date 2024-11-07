@@ -7,7 +7,7 @@ import SunshineWellness from '@/assets/clients-logo/Sunshine.png';
 import DMTransport from '@/assets/clients-logo/DMTransport.jpeg';
 import MindmapAssociates from '@/assets/clients-logo/MindmapAssociates.jpeg';
 
-const BrandScroll = () => {
+const LogosScroll = () => {
   const brands = [
     { id: 1, image: ShapeU, alt: 'Shape You' },
     { id: 2, image: ThePihu, alt: 'The Pihu' },
@@ -18,7 +18,7 @@ const BrandScroll = () => {
 
   return (
     <section className=' w-full container mx-auto text-center justify-center items-center flex flex-col gap-12 py-8'>
-      <h2 className='text-3xl font-bold text-white font-lexend'>
+      <h2 className='text-xl md:text-2xl lg:text-3xl font-bold text-white font-lexend'>
         Trusted by Brands
       </h2>
 
@@ -27,22 +27,62 @@ const BrandScroll = () => {
         <div className='flex w-[200%] '>
           <div className='flex w-1/2 justify-around animate-scroll'>
             {brands.map((brand) => (
-              <div key={brand.id} className='flex-shrink-0 mx-4 '>
-                <Image
-                  src={brand.image}
-                  alt={brand.alt}
-                  width={100}
-                  height={100}
-                  className='object-contain hidden md:block rounded-full'
-                />
-                <Image
-                  src={brand.image}
-                  alt={brand.alt}
-                  width={50}
-                  height={50}
-                  className='object-contain md:hidden rounded-full'
-                />
-              </div>
+              <>
+                <div
+                  key={brand.id}
+                  className='flex-shrink-0 mx-4 hidden lg:block'
+                >
+                  <Image
+                    src={brand.image}
+                    alt={brand.alt}
+                    width={100}
+                    height={100}
+                    className='object-contain hidden md:block rounded-full'
+                  />
+                  <Image
+                    src={brand.image}
+                    alt={brand.alt}
+                    width={50}
+                    height={50}
+                    className='object-contain md:hidden rounded-full'
+                  />
+                </div>
+                <div
+                  key={brand.id}
+                  className='flex-shrink-0 mx-4 hidden md:block lg:hidden'
+                >
+                  <Image
+                    src={brand.image}
+                    alt={brand.alt}
+                    width={75}
+                    height={75}
+                    className='object-contain hidden md:block rounded-full'
+                  />
+                  <Image
+                    src={brand.image}
+                    alt={brand.alt}
+                    width={50}
+                    height={50}
+                    className='object-contain md:hidden rounded-full'
+                  />
+                </div>
+                <div key={brand.id} className='flex-shrink-0 mx-4 md:hidden '>
+                  <Image
+                    src={brand.image}
+                    alt={brand.alt}
+                    width={50}
+                    height={50}
+                    className='object-contain hidden md:block rounded-full'
+                  />
+                  <Image
+                    src={brand.image}
+                    alt={brand.alt}
+                    width={50}
+                    height={50}
+                    className='object-contain md:hidden rounded-full'
+                  />
+                </div>
+              </>
             ))}
           </div>
           {/* Second set of brands */}
@@ -79,4 +119,4 @@ const BrandScroll = () => {
   );
 };
 
-export default BrandScroll;
+export default LogosScroll;

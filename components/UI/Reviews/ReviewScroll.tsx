@@ -49,25 +49,25 @@ const reviews = [
 ];
 const ReviewScroll = () => {
   return (
-    <section className='w-full container mx-auto text-center justify-center items-center flex flex-col lg:gap-[5rem] lg:py-20'>
+    <section className='text-center justify-center items-center flex  flex-col gap-14 lg:gap-[5rem]  py-12 md:py-14 lg:py-16'>
       <div className='flex flex-col gap-2'>
-        <h2 className='text-6xl font-bold text-white font-redhat'>
+        <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white font-redhat'>
           What our <span className='text-primary'>Clients</span> say
         </h2>
-        <p className='text-lg text-[#808080] font-redhat'>
+        <p className='text-sm md:text-base lg:text-lg text-[#808080] font-redhat'>
           We are proud to have worked with some of the most innovative and
           forward-thinking brands in the world.
         </p>
       </div>
 
-      <div className='relative w-full  flex gap-12 h-[40vh] group'>
-        <div className='flex gap-12 w-fit h-full animate-scroll group-hover:[animation-play-state:paused]'>
+      <div className='relative w-full  flex gap-2 px-2 group'>
+        <div className='flex gap-12 animate-scroll group-hover:[animation-play-state:paused] '>
           {reviews.map((review) => (
             <div
               key={review.id}
-              className='flex flex-col justify-between items-center mx-4 w-full h-full md:w-[40vw]'
+              className='flex flex-col justify-between  gap-4 md:gap-6 lg:gap-8 items-center mx-4 w-[80vw]  md:w-[40vw]'
             >
-              <p className='font-redhat text-xl text-[#e8e8e8] font-normal'>
+              <p className=' font-lexend font-light w-full text-sm md:text-base lg:text-xl text-[#c0c0c0] '>
                 {review.review}
               </p>
               <div className='flex items-center justify-center gap-2'>
@@ -94,13 +94,13 @@ const ReviewScroll = () => {
             </div>
           ))}
         </div>
-        <div className='flex gap-12 w-fit h-full animate-scroll group-hover:[animation-play-state:paused]'>
+        <div className='flex gap-12 animate-scroll group-hover:[animation-play-state:paused] '>
           {reviews.map((review) => (
             <div
               key={review.id}
-              className='flex flex-col justify-between items-center mx-4 w-full h-full md:w-[40vw]'
+              className='flex flex-col justify-between gap-8 items-center mx-4 w-[80vw]  md:w-[40vw]'
             >
-              <p className='font-redhat text-xl text-[#e8e8e8] font-normal'>
+              <p className=' font-lexend font-light w-full text-sm md:text-base lg:text-xl text-[#c0c0c0] '>
                 {review.review}
               </p>
               <div className='flex items-center justify-center gap-2'>

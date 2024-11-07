@@ -31,14 +31,14 @@ const WebDevelopmentSection = () => {
   };
 
   return (
-    <div className='text-white p-4 sm:p-8 lg:p-16 flex flex-col gap-8 lg:gap-16 '>
-      <div className='web-development-section relative flex flex-col md:flex-row justify-between items-center  md:gap-16 lg:gap-32 min-h-[80vh]'>
-        <div className='absolute top-0 left-1/2 -translate-x-1/2 w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] lg:w-[45px] lg:h-[45px] flex justify-center items-center text-primary'>
+    <div className='text-white  flex flex-col gap-8 lg:gap-16 '>
+      <div className='app-development-section relative flex flex-col md:flex-row justify-start md:justify-between items-center gap-8   md:gap-16 lg:gap-32  min-h-[100vh] md:min-h-[70vh] lg:min-h-[80vh]'>
+        <div className='md:absolute top-0 left-1/2 -translate-x-1/2 w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] lg:w-[45px] lg:h-[45px] flex justify-center items-center text-primary'>
           <p className='text-white z-10 text-2xl sm:text-2xl lg:text-3xl'>1</p>
           <span className='rotate absolute left-0 right-0 top-0 bottom-0 bg-primary animate-spin-slow'></span>
         </div>
 
-        <div className='service-description flex-1 flex flex-col gap-6 sm:gap-8 lg:gap-12 mt-12 lg:mt-0'>
+        <div className='service-description md:flex-1 flex flex-col gap-6 lg:gap-12 mt-12 lg:mt-0 '>
           <motion.div
             ref={targetRef}
             className='topic-and-description flex flex-col gap-5 sm:gap-8 lg:gap-10'
@@ -80,7 +80,7 @@ const WebDevelopmentSection = () => {
           </div>
         </div>
 
-        <div className='images flex-1 relative w-full  h-[250px] sm:w-[450px] sm:h-[300px] lg:w-[600px] lg:h-[350px] mt-8 lg:mt-0 '>
+        <div className='images  relative w-full   sm:w-[450px] sm:h-[300px] lg:w-[45%] lg:h-[450px] mt-8 lg:mt-0 '>
           <motion.div
             initial={{ scale: 1.2 }}
             whileInView={{ scale: 1 }}
