@@ -10,6 +10,7 @@ import YatraMitra from '@/assets/clients-logo/YatraMitra.jpeg';
 import EM from '@/assets/clients-logo/EM.jpg';
 import Sportistry from '@/assets/clients-logo/SportIstry.jpg';
 import Image from 'next/image';
+import ContactFormCard from '@/components/UI/ContactFormCard/ContactFormCard';
 
 const Projects = [
   {
@@ -80,8 +81,8 @@ const Projects = [
 
 const Works = () => {
   return (
-    <main className='bg-[#141414] w-full h-full min-h-screen p-4 md:p-12 lg:p-16 flex flex-col gap-8 md:gap-12 lg:gap-16'>
-      <section className='hero-texts text-white flex flex-col gap-4 md:gap-6 lg:gap-8 '>
+    <main className='bg-[#141414] w-full h-full min-h-screen  flex flex-col gap-8 md:gap-12 lg:gap-16'>
+      <section className='hero-texts text-white flex flex-col gap-4 md:gap-6 lg:gap-8 p-4 md:p-12 lg:p-16'>
         <motion.h1
           initial={{ y: 120, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -98,14 +99,14 @@ const Works = () => {
             ease: [0.44, 0, 0.56, 1],
             delay: 0.2,
           }}
-          className='text-base md:text-lg lg:text-2xl'
+          className='text-base md:text-lg lg:text-2xl font-lexend'
         >
           see how we've transformed ideas into digital success stories. Explore
           our portfolio of websites, apps, and strategies designed to help
           businesses thrive.
         </motion.p>
       </section>
-      <section className='projects w-full h-fit flex flex-col gap-4 md:gap-6 lg:gap-8 '>
+      <section className='projects w-full h-fit flex flex-col gap-4 md:gap-6 lg:gap-8 px-4 md:px-12 lg:px-16'>
         <motion.h2
           initial={{ y: 120, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -133,6 +134,7 @@ const Works = () => {
           ))}
         </motion.div>
       </section>
+      <ContactFormCard />
     </main>
   );
 };

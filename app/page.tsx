@@ -1,8 +1,8 @@
 import LogosScroll from '@/components/UI/LogosScroll';
-import ContactForm from '@/components/UI/Forms/ContactForm';
 import HeroSection from '@/components/UI/Home/HeroSection';
 import ServicesSection from '@/components/UI/Home/Services/ServicesSection';
 import ReviewScroll from '@/components/UI/Reviews/ReviewScroll';
+import ContactFormCard from '@/components/UI/ContactFormCard/ContactFormCard';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <LogosScroll />
       <ServicesSection />
       <ReviewScroll />
-      <ContactForm />
+      <ContactFormCard />
     </main>
   );
 }

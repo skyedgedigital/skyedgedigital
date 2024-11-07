@@ -52,10 +52,13 @@ const NavBar = () => {
           <a href='/works' className='hover:text-gray-600 transition-colors'>
             Works
           </a>
-          <a href='/about' className='hover:text-gray-600 transition-colors'>
+          <a href='/about-us' className='hover:text-gray-600 transition-colors'>
             About Us
           </a>
-          <a href='/contact' className='hover:text-gray-600 transition-colors'>
+          <a
+            href='/contact-us'
+            className='hover:text-gray-600 transition-colors'
+          >
             Contact
           </a>
         </div>
