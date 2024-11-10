@@ -6,7 +6,7 @@ import ContactFormCard from '@/components/UI/ContactFormCard/ContactFormCard';
 
 export default function Home() {
   return (
-    <main className='bg-[#141414] overflow-hidden'>
+    <main className='bg-[#141414] overflow-hidden max-w-screen'>
       <HeroSection />
       <LogosScroll />
       <ServicesSection />

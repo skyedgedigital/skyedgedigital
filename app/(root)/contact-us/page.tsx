@@ -23,16 +23,25 @@ const page = () => {
             ease: [0.44, 0, 0.56, 1],
             delay: 0.2,
           }}
-          className='text-base md:text-lg lg:text-2xl font-lexend'
+          className='text-base md:text-lg lg:text-xl font-lexend'
         >
           We collaborate with ambitious brands, whether you’re a dynamic
           start-up or an established organization. Reach out to us, and
           together, we’ll create something exceptional.
         </motion.p>
       </section>
-      <section className='contact-form'>
+      <motion.section
+        initial={{ y: 120, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.6,
+          ease: [0.44, 0, 0.56, 1],
+          delay: 0.3,
+        }}
+        className='contact-form'
+      >
         <ContactForm />
-      </section>
+      </motion.section>
     </main>
   );
 };

@@ -1,6 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
+import Logo from '@/assets/Logo-Black.png';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +27,11 @@ const NavBar = () => {
       <nav
         className={`${
           isScrolled ? 'fixed' : 'relative'
-        } top-0 left-0 w-full bg-white shadow-md px-6 py-4 flex justify-between items-center z-50`}
+        } top-0 left-0 w-full bg-white shadow-md px-6 py-2 flex justify-between items-center z-50`}
       >
-        <div className='text-xl font-bold'>LOGO</div>
+        <div className='text-xl font-bold '>
+          <Image src={Logo} width={150} alt='skyedge digital logo' />
+        </div>
         <button className='text-2xl' onClick={toggleMenu}>
           ☰
         </button>

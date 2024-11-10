@@ -10,6 +10,7 @@ import { useRef } from 'react';
 import { MdEmail } from 'react-icons/md';
 import { BsTelephoneFill } from 'react-icons/bs';
 import ContactForm from '../Forms/ContactForm';
+import Link from 'next/link';
 
 const formSchema = z.object({
   firstName: z.string().min(2, 'First name must be at least 2 characters'),
@@ -47,7 +48,10 @@ const ContactFormCard = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
-    <section id='contact-section' className='p-4 bg-[#090909] md:p-8 lg:p-16'>
+    <section
+      id='contact-section'
+      className='p-3 py-6 bg-[#090909] md:p-8 lg:p-16'
+    >
       <motion.div
         ref={containerRef}
         style={{ y, scale }}
@@ -55,7 +59,7 @@ const ContactFormCard = () => {
       >
         <div className='flex w-full lg:w-2/5 flex-col gap-10'>
           <div className='flex flex-col gap-4'>
-            <h2 className='text-white text-3xl md:text-4xl text-center lg:text-left lg:text-5xl font-urbanist font-light'>
+            <h2 className='text-white text-2xl md:text-4xl text-center lg:text-left lg:text-5xl font-urbanist font-light'>
               Join the brands surging ahead with us
             </h2>
             <p className='text-[#808080] text-base text-center lg:text-left md:text-lg lg:text-xl font-red-hat-display'>
@@ -67,9 +71,12 @@ const ContactFormCard = () => {
           <div className='flex flex-col md:flex-row lg:flex-col items-center justify-center lg:items-start lg:justify-start gap-3 md:gap-10 lg:gap-2 text-white font-red-hat-display font-light'>
             <span className='send flex items-center gap-2'>
               <MdEmail className='text-white text-xl' />
-              <p className='text-base md:text-lg lg:text-xl text-[#9c9c9c] '>
+              <Link
+                href='mailto:madhurendra.pratap@skyedgedigital.in'
+                className='text-base md:text-lg lg:text-xl text-[#9c9c9c] text-wrap'
+              >
                 madhurendra.pratap@skyedgedigital.in
-              </p>
+              </Link>
             </span>
             <span className='phone flex items-center gap-2'>
               <BsTelephoneFill className='text-white text-xl ' />
@@ -81,8 +88,12 @@ const ContactFormCard = () => {
         </div>
         <div className='flex w-full lg:w-3/5 flex-col gap-6'>
           <h2 className='text-3xl md:text-4xl lg:text-5xl font-red-hat-display font-bold text-center lg:text-left'>
-            <span className='text-white text-5xl'>Get in Touch</span>
-            <span className='text-primary text-5xl'>.</span>
+            <span className='text-white text-2xl md:text-4xl lg:text-5xl'>
+              Get in Touch
+            </span>
+            <span className='text-primary text-2xl md:text-4xl lg:text-5xl'>
+              .
+            </span>
           </h2>
           <ContactForm />
         </div>

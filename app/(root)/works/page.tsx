@@ -99,7 +99,7 @@ const Works = () => {
             ease: [0.44, 0, 0.56, 1],
             delay: 0.2,
           }}
-          className='text-base md:text-lg lg:text-2xl font-lexend'
+          className='text-base md:text-lg lg:text-xl font-lexend'
         >
           see how we've transformed ideas into digital success stories. Explore
           our portfolio of websites, apps, and strategies designed to help
