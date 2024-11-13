@@ -299,9 +299,9 @@ const AboutUs = () => {
               </p>
             </div>
             <div className=' md:opacity-0 md:group-hover:opacity-100 transition-all social-media flex justify-center items-center gap-2 p-2 rounded-lg bg-white absolute right-2 top-2'>
-              <Link href=''>
+              {/* <Link href=''>
                 <FaInstagram className='w-[32px] h-[32px] text-[#E1306C]' />
-              </Link>
+              </Link> */}
               <Link href='https://www.linkedin.com/in/madhurendra-pratap-62118a205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'>
                 <FaLinkedin className='w-[32px] h-[32px] text-[#0077B5]' />
               </Link>
@@ -335,9 +335,9 @@ const AboutUs = () => {
               </p>
             </div>
             <div className=' md:opacity-0 md:group-hover:opacity-100 transition-all social-media flex justify-center items-center gap-2 p-2 rounded-lg bg-white absolute right-2 top-2'>
-              <Link href=''>
+              {/* <Link href=''>
                 <FaInstagram className='w-[32px] h-[32px] text-[#E1306C]' />
-              </Link>
+              </Link> */}
               <Link href='https://www.linkedin.com/in/ritobaanroy5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                 <FaLinkedin className='w-[32px] h-[32px] text-[#0077B5]' />
               </Link>
@@ -403,9 +403,9 @@ const AboutUs = () => {
               </p>
             </div>
             <div className=' md:opacity-0 md:group-hover:opacity-100 transition-all social-media flex justify-center items-center gap-2 p-2 rounded-lg bg-white absolute right-2 top-2'>
-              <Link href=''>
+              {/* <Link href=''>
                 <FaInstagram className='w-[32px] h-[32px] text-[#E1306C]' />
-              </Link>
+              </Link> */}
               <Link href='https://www.linkedin.com/in/pranav-raj-srivastav-891633240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                 <FaLinkedin className='w-[32px] h-[32px] text-[#0077B5]' />
               </Link>
