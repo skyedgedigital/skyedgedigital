@@ -34,17 +34,12 @@ const HeroSection = () => {
           that elevate your brands and engage your audience
         </motion.p>
       </div>
-      <button
+      <Link
+        href={'/contact-us'}
         className='bg-primary font-semibold text-white rounded-full px-8 py-2 cursor-pointer'
-        onClick={(e) => {
-          e.preventDefault();
-          document
-            .querySelector('#contact-section')
-            ?.scrollIntoView({ behavior: 'smooth' });
-        }}
       >
         Get Started
-      </button>
+      </Link>
       <div className='statistics-box-container relative md:absolute md:w-fit sm:bottom-8 md:bottom-16 right-0 sm:right-8 md:right-16 flex flex-row justify-center md:justify-end items-center gap-4 text-primary  w-full'>
         <motion.span
           initial={{ scale: 0.2, opacity: 0, x: 160, y: 200 }}

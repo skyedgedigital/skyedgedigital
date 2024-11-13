@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import Logo from '@/assets/Logo-Black.png';
+import Link from 'next/link';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,9 +30,9 @@ const NavBar = () => {
           isScrolled ? 'fixed' : 'relative'
         } top-0 left-0 w-full bg-white shadow-md px-6 py-2 flex justify-between items-center z-50`}
       >
-        <div className='text-xl font-bold '>
+        <Link href={'/'} className='text-xl font-bold '>
           <Image src={Logo} width={150} alt='skyedge digital logo' />
-        </div>
+        </Link>
         <button className='text-2xl' onClick={toggleMenu}>
           ☰
         </button>

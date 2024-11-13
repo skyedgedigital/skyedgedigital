@@ -1,9 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import axios from 'axios';
+import { FaSpinner } from 'react-icons/fa';
 
 const formSchema = z.object({
   firstName: z.string().min(2, 'First name must be at least 2 characters'),
@@ -18,22 +20,44 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+  const [buttonText, setButtonText] = useState('Send Message');
+
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
-    // Handle form submission
+  const handleFormSubmit = async (data: FormValues) => {
+    setLoading(true);
+    setButtonText('Loading...');
+    try {
+      const response = await axios.post('/api/potential-clients', data);
+      console.log(response.data.message);
+      setButtonText('Thank you');
+      reset();
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        console.error(error.response?.data.message || 'An error occurred');
+        setButtonText('Submission failed. Try again.');
+        setTimeout(() => setButtonText('Send Message'), 5000);
+      } else {
+        console.error('An unexpected error occurred:', error);
+      }
+    } finally {
+      setLoading(false);
+      setTimeout(() => setButtonText('Send Message'), 5000);
+    }
   };
+
   return (
     <div>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={handleSubmit(handleFormSubmit)}
         className='flex flex-col gap-6 md:gap-8 lg:gap-10 justify-start items-center font-red-hat-display'
       >
         <div className='w-full flex md:flex-row flex-col gap-6'>
@@ -132,9 +156,11 @@ const ContactForm = () => {
         <div className='w-full flex justify-center lg:justify-end items-center'>
           <button
             type='submit'
-            className='bg-primary font-bold rounded-full text-white px-6 py-3  hover:bg-primary/90 transition-colors'
+            className='bg-primary font-bold rounded-full text-white px-6 py-3 hover:bg-primary/90 transition-colors flex justify-center items-center'
+            style={{ width: '200px' }}
+            disabled={loading}
           >
-            Send Message
+            {loading ? <FaSpinner className='animate-spin' /> : buttonText}
           </button>
         </div>
       </form>

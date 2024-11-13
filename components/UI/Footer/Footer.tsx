@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import Logo from '@/assets/Logo-white.png';
+import Logo from '@/assets/Logo-White.png';
 import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className='bg-[#090909] text-white py-8  px-4 md:px-8'>
       <div className='container mx-auto flex flex-col gap-12'>
-        <div className='w-full flex justify-center items-center'>
+        <div className='w-full flex justify-center items-center flex-col gap-1 '>
           <Image src={Logo} width={200} alt='sky edge digital logo' />
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
