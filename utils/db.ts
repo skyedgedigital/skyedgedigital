@@ -1,5 +1,10 @@
 import mongoose from 'mongoose';
 
+const mongo_uri =
+  process.env.NODE_ENV === 'production'
+    ? process.env.MONGO_URI
+    : process.env.DEV_MONGO_URI;
+
 const connectDB = async () => {
   const connectionState = mongoose.connection.readyState;
   if (connectionState === 1) {
@@ -12,7 +17,7 @@ const connectDB = async () => {
   }
 
   try {
-    await mongoose.connect(process.env.MONGO_URI as string, {
+    await mongoose.connect(mongo_uri as string, {
       dbName: 'skyedgedigital',
       bufferCommands: true,
     });

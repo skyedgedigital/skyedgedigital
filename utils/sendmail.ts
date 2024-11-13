@@ -1,6 +1,4 @@
 import nodemailer from 'nodemailer';
-// const recipient = 'madhurendra.pratap@skyedgedigital.in';
-const recipient = 'vermapraween6543@gmail.com';
 
 const sendMail = async (
   subject: string,
@@ -19,15 +17,24 @@ const sendMail = async (
     port: 465, // TLS port
     secure: true, // Use TLS
     auth: {
-      user: 'foruselessthing69@gmail.com', // Replace with your Gmail address
-      pass: 'vonwoeuigctwxqva', // Replace with your Gmail password or app-specific password
+      user:
+        process.env.NODE_ENV === 'production'
+          ? process.env.OFFICIAL_MAIL // email address which will used to send email
+          : process.env.DEV_OFFICIAL_MAIL,
+      pass:
+        process.env.NODE_ENV === 'production'
+          ? process.env.OFFICIAL_MAIL_APP_PASS
+          : process.env.DEV_OFFICIAL_MAIL_APP_PASS, // app password from same email
     },
   });
 
   // Set up email data
   const mailOptions = {
     from: sender, // Replace with your email
-    to: recipient, // Recipient's email
+    to:
+      process.env.NODE_ENV === 'production'
+        ? process.env.FORM_RECIPIENT_MAIL // email address which will used to send email
+        : process.env.DEV_FORM_RECIPIENT_MAIL, // Recipient's email
     subject: subject,
     text: `
     firstname: ${messages.firstName}
