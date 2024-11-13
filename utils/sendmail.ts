@@ -1,14 +1,9 @@
+import { IPotentialClients } from '@/interfaces/PotentialCLients.interface';
 import nodemailer from 'nodemailer';
 
 const sendMail = async (
   subject: string,
-  messages: {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    projectDescription: string;
-  },
+  messages: IPotentialClients,
   sender: string
 ): Promise<Boolean> => {
   // Create a transporter
@@ -40,7 +35,7 @@ const sendMail = async (
     firstname: ${messages.firstName}
     lastname:  ${messages.lastName}
     email: ${messages.email}
-    phone: ${messages.phone}
+    phone: ${messages.phoneNo}
     projectDescription: ${messages.projectDescription}
     `,
   };

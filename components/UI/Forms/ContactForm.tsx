@@ -4,14 +4,15 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import axios from 'axios';
 import { FaSpinner } from 'react-icons/fa';
+import { createPotentialClients } from '@/lib/actions/potentialClients/create';
+import { IPotentialClients } from '@/interfaces/PotentialCLients.interface';
 
 const formSchema = z.object({
   firstName: z.string().min(2, 'First name must be at least 2 characters'),
   lastName: z.string().min(2, 'Last name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
-  phone: z.string().min(10, 'Phone number must be at least 10 digits'),
+  phoneNo: z.string().min(10, 'Phone number must be at least 10 digits'),
   projectDescription: z
     .string()
     .min(10, 'Project description must be at least 10 characters'),
@@ -36,18 +37,15 @@ const ContactForm = () => {
     setLoading(true);
     setButtonText('Loading...');
     try {
-      const response = await axios.post('/api/potential-clients', data);
-      console.log(response.data.message);
-      setButtonText('Thank you');
-      reset();
-    } catch (error) {
-      if (axios.isAxiosError(error)) {
-        console.error(error.response?.data.message || 'An error occurred');
-        setButtonText('Submission failed. Try again.');
-        setTimeout(() => setButtonText('Send Message'), 5000);
+      const response = await createPotentialClients(data as IPotentialClients);
+      if (response.status === 200) {
+        setButtonText('Thank you');
+        reset();
       } else {
-        console.error('An unexpected error occurred:', error);
+        console.log(response.message);
       }
+    } catch (error) {
+      console.log(error);
     } finally {
       setLoading(false);
       setTimeout(() => setButtonText('Send Message'), 5000);
@@ -123,13 +121,13 @@ const ContactForm = () => {
               Phone
             </label>
             <input
-              {...register('phone')}
+              {...register('phoneNo')}
               id='phone'
               type='tel'
               className='input w-full  p-3 bg-[#262626] text-white border-b-[1px] border-b-primary'
             />
-            {errors.phone && (
-              <span className='text-red-500'>{errors.phone.message}</span>
+            {errors.phoneNo && (
+              <span className='text-red-500'>{errors.phoneNo.message}</span>
             )}
           </div>
         </div>

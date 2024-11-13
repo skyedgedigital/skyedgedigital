@@ -33,9 +33,29 @@ const NavBar = () => {
         <Link href={'/'} className='text-xl font-bold '>
           <Image src={Logo} width={150} alt='skyedge digital logo' />
         </Link>
-        <button className='text-2xl' onClick={toggleMenu}>
+        <button className='text-2xl md:hidden' onClick={toggleMenu}>
           ☰
         </button>
+        <div className='hidden md:flex items-center space-x-4'>
+          <Link href='/' className='hover:text-gray-600 transition-colors'>
+            Home
+          </Link>
+          <Link href='/works' className='hover:text-gray-600 transition-colors'>
+            Works
+          </Link>
+          <Link
+            href='/about-us'
+            className='hover:text-gray-600 transition-colors'
+          >
+            About Us
+          </Link>
+          <Link
+            href='/contact-us'
+            className='hover:text-gray-600 transition-colors'
+          >
+            Contact
+          </Link>
+        </div>
       </nav>
 
       {/* Fullscreen Menu */}
