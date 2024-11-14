@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
-import ShapeU from '@/assets/clients-logo/ShapeU.png';
-import ThePihu from '@/assets/clients-logo/ThePihu.png';
-import SunshineWellness from '@/assets/clients-logo/Sunshine.png';
-import DMTransport from '@/assets/clients-logo/DMTransport.jpeg';
-import MindmapAssociates from '@/assets/clients-logo/MindmapAssociates.jpeg';
-import YatraMitra from '@/assets/clients-logo/YatraMitra.jpeg';
-import EM from '@/assets/clients-logo/EM.jpg';
-import Sportistry from '@/assets/clients-logo/SportIstry.jpg';
+import ShapeU from '@/public/assets/clients-logo/ShapeU.png';
+import ThePihu from '@/public/assets/clients-logo/ThePihu.png';
+import SunshineWellness from '@/public/assets/clients-logo/Sunshine.png';
+import DMTransport from '@/public/assets/clients-logo/DMTransport.jpeg';
+import MindmapAssociates from '@/public/assets/clients-logo/MindmapAssociates.jpeg';
+import YatraMitra from '@/public/assets/clients-logo/YatraMitra.jpeg';
+import EM from '@/public/assets/clients-logo/EM.jpg';
+import Sportistry from '@/public/assets/clients-logo/SportIstry.jpg';
 import Image from 'next/image';
 import ContactFormCard from '@/components/UI/ContactFormCard/ContactFormCard';
 

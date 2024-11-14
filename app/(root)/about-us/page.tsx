@@ -3,12 +3,12 @@ import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
 
-import OfficeDiscussion from '@/assets/stock-photos/office-discussion.jpg';
+import OfficeDiscussion from '@/public/assets/stock-photos/office-discussion.jpg';
 import { FiMinus } from 'react-icons/fi';
-import Founder from '@/assets/Team-members-Image/Founder.png';
-import CoFounder from '@/assets/Team-members-Image/cofounder.png';
-import uiux from '@/assets/Team-members-Image/uiux.png';
-import smm from '@/assets/Team-members-Image/smm.png';
+import Founder from '@/public/assets/Team-members-Image/Founder.png';
+import CoFounder from '@/public/assets/Team-members-Image/cofounder.png';
+import uiux from '@/public/assets/Team-members-Image/uiux.png';
+import smm from '@/public/assets/Team-members-Image/smm.png';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa6';
 import Link from 'next/link';
 import { FaFacebookSquare } from 'react-icons/fa';
@@ -146,6 +146,7 @@ const AboutUs = () => {
         >
           <Image
             src={OfficeDiscussion}
+            // src='/public/assets/stock-photos/office-discussion.jpg'
             className='aspect-[2/1] object-cover rounded-2xl'
             alt='about-us'
           />

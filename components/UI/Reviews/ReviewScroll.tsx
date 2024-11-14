@@ -2,12 +2,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import ShapeU from '@/assets/clients-logo/ShapeU.png';
-import SunshineWellness from '@/assets/clients-logo/Sunshine.png';
-import DMTransport from '@/assets/clients-logo/DMTransport.jpeg';
-import MindmapAssociates from '@/assets/clients-logo/MindmapAssociates.jpeg';
+import ShapeU from '@/public/assets/clients-logo/ShapeU.png';
+import SunshineWellness from '@/public/assets/clients-logo/Sunshine.png';
+import DMTransport from '@/public/assets/clients-logo/DMTransport.jpeg';
+import MindmapAssociates from '@/public/assets/clients-logo/MindmapAssociates.jpeg';
 
-import Profile from '@/assets/profile.png';
+import Profile from '@/public/assets/profile.png';
 
 const reviews = [
   {

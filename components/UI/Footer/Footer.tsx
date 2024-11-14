@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import Logo from '@/assets/Logo-White.png';
+import Logo from '@/public/assets/Logo-White.png';
 import Link from 'next/link';
 
 const Footer = () => {
