@@ -28,8 +28,8 @@ const sendMail = async (
     from: sender, // Replace with your email
     to:
       process.env.NODE_ENV === 'production'
-        ? process.env.FORM_RECIPIENT_MAIL // email address which will used to send email
-        : process.env.DEV_FORM_RECIPIENT_MAIL, // Recipient's email
+        ? process.env.FORM_RECIPIENT_MAIL?.split(',') // email address which will used to send email
+        : process.env.DEV_FORM_RECIPIENT_MAIL?.split(','), // Recipient's email
     subject: subject,
     text: `
     firstname: ${messages.firstName}

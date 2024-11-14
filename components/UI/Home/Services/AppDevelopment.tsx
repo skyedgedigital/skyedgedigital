@@ -32,7 +32,7 @@ const AppDevelopment = () => {
 
   return (
     <div className='text-white flex flex-col gap-8 lg:gap-16 '>
-      <div className='app-development-section relative flex flex-col md:flex-row justify-start md:justify-between items-center gap-8   md:gap-16 lg:gap-32  min-h-[100vh] md:min-h-[70vh] lg:min-h-[80vh]'>
+      <div className='app-development-section relative flex flex-col md:flex-row-reverse justify-start md:justify-between items-center gap-8   md:gap-16 lg:gap-32  min-h-[100vh] md:min-h-[70vh] lg:min-h-[80vh]'>
         <div className='md:absolute top-0 left-1/2 -translate-x-1/2 w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] lg:w-[45px] lg:h-[45px] flex justify-center items-center text-primary'>
           <p className='text-white z-10 text-2xl sm:text-2xl lg:text-3xl'>2</p>
           <span className='rotate absolute left-0 right-0 top-0 bottom-0 bg-primary animate-spin-slow'></span>
