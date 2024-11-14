@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
-import ShapeAD from '@/assets/Shapes/ShapeAD.png';
-import RotatedShapeRight from '@/assets/Shapes/RotatedShapeRight.png';
+import ShapeAD from '@/public/assets/Shapes/ShapeAD.png';
+import RotatedShapeRight from '@/public/assets/Shapes/RotatedShapeRight.png';
 import { FiMinus } from 'react-icons/fi';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
