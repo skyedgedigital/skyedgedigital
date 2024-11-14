@@ -6,6 +6,8 @@ import ThePihu from '@/public/assets/clients-logo/ThePihu.png';
 import SunshineWellness from '@/public/assets/clients-logo/Sunshine.png';
 import DMTransport from '@/public/assets/clients-logo/DMTransport.jpeg';
 import MindmapAssociates from '@/public/assets/clients-logo/MindmapAssociates.jpeg';
+import Sportistry from '@/public/assets/clients-logo/SportIstry.jpg';
+import YatraMitra from '@/public/assets/clients-logo/YatraMitra.jpeg';
 
 const LogosScroll = () => {
   const brands = [
@@ -13,7 +15,9 @@ const LogosScroll = () => {
     { id: 2, image: ThePihu, alt: 'The Pihu' },
     { id: 3, image: SunshineWellness, alt: 'Sunshine Wellness' },
     { id: 4, image: DMTransport, alt: 'DM Transport' },
-    { id: 5, image: MindmapAssociates, alt: 'Mindmap Associates' },
+    { id: 5, image: YatraMitra, alt: 'Yatra Mitra' },
+    { id: 6, image: MindmapAssociates, alt: 'Mindmap Associates' },
+    { id: 7, image: Sportistry, alt: 'Sportistry' },
   ];
 
   return (

@@ -47,7 +47,7 @@ const WebDevelopmentSection = () => {
             <h3 className='text-xl sm:text-2xl lg:text-3xl border-b-primary border-b-[1px] w-fit'>
               Web Development
             </h3>
-            <p className='text-sm sm:text-lg lg:text-2xl text-[#cecece]'>
+            <p className='text-base sm:text-lg lg:text-2xl text-[#cecece]'>
               We build websites that are fast, secure, and easy to maintain. We
               craft dynamic websites that not only look stunning but also
               perform seamlessly. We take care of every detail, from UI/UX
@@ -72,7 +72,7 @@ const WebDevelopmentSection = () => {
                 className='flex items-center gap-2 justify-start'
               >
                 <FiMinus className='text-primary' />
-                <p className='text-[14px] md:text-lg lg:text-xl text-[#dbdbdb]'>
+                <p className='text-base md:text-lg lg:text-xl text-[#dbdbdb]'>
                   {text}
                 </p>
               </motion.div>

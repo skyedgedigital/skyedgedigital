@@ -47,7 +47,7 @@ const SocialMediaManagement = () => {
             <h3 className='text-xl sm:text-2xl lg:text-3xl border-b-primary border-b-[1px] w-fit'>
               Social Media Management
             </h3>
-            <p className='text-sm sm:text-lg lg:text-2xl text-[#cecece]'>
+            <p className='text-base sm:text-lg lg:text-2xl text-[#cecece]'>
               Our social media management services help you build a stronger
               online presence that connects with your audience. We handle
               everything from strategy and content creation to ad management and
@@ -73,7 +73,7 @@ const SocialMediaManagement = () => {
                 className='flex items-center gap-2 justify-start'
               >
                 <FiMinus className='text-primary' />
-                <p className='text-[14px] md:text-lg lg:text-xl text-[#dbdbdb]'>
+                <p className='text-base md:text-lg lg:text-xl text-[#dbdbdb]'>
                   {text}
                 </p>
               </motion.div>

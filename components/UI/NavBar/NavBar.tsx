@@ -33,7 +33,7 @@ const NavBar = () => {
         <Link href={'/'} className='text-xl font-bold '>
           <Image src={Logo} width={150} alt='skyedge digital logo' />
         </Link>
-        <button className='text-2xl md:hidden' onClick={toggleMenu}>
+        <button className='text-3xl md:hidden py-1 px-3' onClick={toggleMenu}>
           ☰
         </button>
         <div className='hidden md:flex items-center space-x-4'>

@@ -47,7 +47,7 @@ const ProductManagement = () => {
             <h3 className='text-xl sm:text-2xl lg:text-3xl border-b-primary border-b-[1px] w-fit'>
               Product Management
             </h3>
-            <p className='text-sm sm:text-lg lg:text-2xl text-[#cecece]'>
+            <p className='text-base sm:text-lg lg:text-2xl text-[#cecece]'>
               We provide comprehensive product management services to help you
               turn ideas into successful products. With expertise in market
               research, user experience, and agile methodologies, we help you
@@ -72,7 +72,7 @@ const ProductManagement = () => {
                 className='flex items-center gap-2 justify-start'
               >
                 <FiMinus className='text-primary' />
-                <p className='text-[14px] md:text-lg lg:text-xl text-[#dbdbdb]'>
+                <p className='text-base md:text-lg lg:text-xl text-[#dbdbdb]'>
                   {text}
                 </p>
               </motion.div>

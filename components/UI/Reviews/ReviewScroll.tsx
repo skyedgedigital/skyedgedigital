@@ -100,7 +100,7 @@ const ReviewScroll = () => {
               key={review.id}
               className='flex flex-col justify-between gap-8 items-center mx-4 w-[80vw]  md:w-[40vw]'
             >
-              <p className=' font-lexend font-light w-full text-sm md:text-base lg:text-xl text-[#c0c0c0] '>
+              <p className=' font-lexend font-light w-full text-base md:text-lg lg:text-xl text-[#c0c0c0] '>
                 {review.review}
               </p>
               <div className='flex items-center justify-center gap-2'>
