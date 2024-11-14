@@ -56,8 +56,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.2 }}
           className='border-[1px] statistics-box rounded-3xl border-gray-300 flex flex-col gap-2 p-4 md:p-7  text-primary'
         >
-          <h2 className='text-lg md:text-xl font-semibold'>10+</h2>
-          <p className='text-sm md:text-base'>Projects</p>
+          <h2 className='text-lg md:text-xl font-semibold'>20+</h2>
+          <p className='text-sm md:text-base'>Team Size</p>
         </motion.span>
       </div>
     </section>
