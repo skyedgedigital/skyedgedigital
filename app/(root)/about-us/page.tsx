@@ -161,11 +161,11 @@ const AboutUs = () => {
             transition={{ ease: 'linear' }}
           >
             {Array.from({ length: 10 }).map((_, index) => (
-              <div className='flex justify-center items-center gap-16'>
-                <span
-                  key={index}
-                  className='capitalize font-semibold text-white text-5xl md:text-6xl lg:text-8xl text-nowrap'
-                >
+              <div
+                key={index}
+                className='flex justify-center items-center gap-16'
+              >
+                <span className='capitalize font-semibold text-white text-5xl md:text-6xl lg:text-8xl text-nowrap'>
                   our expertise
                 </span>
                 <div className='h-6 w-6 md:h-7 md:w-7 lg:w-8 lg:h-8 bg-primary'></div>
@@ -179,11 +179,11 @@ const AboutUs = () => {
             transition={{ ease: 'linear' }}
           >
             {Array.from({ length: 10 }).map((_, index) => (
-              <div className='flex justify-center items-center gap-16'>
-                <span
-                  key={index}
-                  className='capitalize font-semibold text-white text-5xl md:text-6xl lg:text-8xl text-nowrap'
-                >
+              <div
+                key={index}
+                className='flex justify-center items-center gap-16'
+              >
+                <span className='capitalize font-semibold text-white text-5xl md:text-6xl lg:text-8xl text-nowrap'>
                   our expertise
                 </span>
                 <div className='h-6 w-6 md:h-7 md:w-7 lg:w-8 lg:h-8 bg-primary'></div>

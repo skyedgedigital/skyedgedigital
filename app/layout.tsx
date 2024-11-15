@@ -5,6 +5,7 @@ import Footer from '@/components/UI/Footer/Footer';
 import { Urbanist } from 'next/font/google';
 import { Lexend } from 'next/font/google';
 import { Red_Hat_Display } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 
 const lexend = Lexend({ subsets: ['latin'], variable: '--font-lexend' });
 const urbanist = Urbanist({ subsets: ['latin'], variable: '--font-urbanist' });
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={` antialiased ${urbanist.variable} ${lexend.variable} ${redHatDisplay.variable}`}
       >
+        <Analytics />
         <NavBar />
         {/* <main className='min-h-[calc(100vh-100px)] border-4 border-green-600'> */}
         {children}
