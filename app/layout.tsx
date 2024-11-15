@@ -6,6 +6,7 @@ import { Urbanist } from 'next/font/google';
 import { Lexend } from 'next/font/google';
 import { Red_Hat_Display } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const lexend = Lexend({ subsets: ['latin'], variable: '--font-lexend' });
 const urbanist = Urbanist({ subsets: ['latin'], variable: '--font-urbanist' });
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={` antialiased ${urbanist.variable} ${lexend.variable} ${redHatDisplay.variable}`}
       >
         <Analytics />
+        <SpeedInsights/>
         <NavBar />
         {/* <main className='min-h-[calc(100vh-100px)] border-4 border-green-600'> */}
         {children}
