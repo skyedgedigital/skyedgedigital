@@ -81,7 +81,7 @@ const ContactFormCard = () => {
             <span className='phone flex items-center gap-2'>
               <BsTelephoneFill className='text-white text-xl ' />
               <p className='text-base md:text-lg lg:text-xl text-[#9c9c9c] '>
-                +91 7320-0039-09
+                +91 7004-7892-17
               </p>
             </span>
           </div>

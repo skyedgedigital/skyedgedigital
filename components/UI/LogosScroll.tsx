@@ -30,17 +30,17 @@ const LogosScroll = () => {
       <div className='relative w-full '>
         <div className='flex w-[200%] '>
           <div className='flex w-1/2 justify-around animate-scroll'>
-            {brands.map((brand) => (
+            {brands.map((brand, index) => (
               <>
                 <div
-                  key={brand.id}
+                  key={brand.id + index}
                   className='flex-shrink-0 mx-4 hidden lg:block'
                 >
                   <Image
                     src={brand.image}
                     alt={brand.alt}
-                    width={100}
-                    height={100}
+                    width={90}
+                    height={90}
                     className='object-contain hidden md:block rounded-full'
                   />
                   <Image
@@ -52,7 +52,7 @@ const LogosScroll = () => {
                   />
                 </div>
                 <div
-                  key={brand.id}
+                  key={brand.id + index}
                   className='flex-shrink-0 mx-4 hidden md:block lg:hidden'
                 >
                   <Image
@@ -70,7 +70,10 @@ const LogosScroll = () => {
                     className='object-contain md:hidden rounded-full'
                   />
                 </div>
-                <div key={brand.id} className='flex-shrink-0 mx-4 md:hidden '>
+                <div
+                  key={brand.id + index}
+                  className='flex-shrink-0 mx-4 md:hidden '
+                >
                   <Image
                     src={brand.image}
                     alt={brand.alt}
@@ -96,8 +99,8 @@ const LogosScroll = () => {
                 <Image
                   src={brand.image}
                   alt={brand.alt}
-                  width={100}
-                  height={100}
+                  width={90}
+                  height={90}
                   className='object-contain hidden md:block rounded-full'
                 />
                 <Image

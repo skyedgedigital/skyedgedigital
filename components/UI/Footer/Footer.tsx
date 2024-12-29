@@ -42,7 +42,7 @@ const Footer = () => {
                   madhurendra.pratap@skyedgedigital.in
                 </Link>
               </li>
-              <li>Ph: 7320003909</li>
+              <li>Ph: 7004789217</li>
             </ul>
             <div className='flex gap-6 text-2xl mt-4'>
               <a
