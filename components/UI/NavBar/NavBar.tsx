@@ -81,7 +81,9 @@ const NavBar = () => {
         } z-50`}
       >
         <div className='px-6 py-4 flex justify-between items-center'>
-          <div className='text-xl font-bold'>LOGO</div>
+          <div className='text-xl font-bold'>
+            <Image src={Logo} width={150} alt='skyedge digital logo' />
+          </div>
           <button className='text-2xl' onClick={toggleMenu}>
             ✕
           </button>
