@@ -9,6 +9,8 @@ import MindmapAssociates from '@/public/assets/clients-logo/MindmapAssociates.jp
 import YatraMitra from '@/public/assets/clients-logo/YatraMitra.jpeg';
 import EM from '@/public/assets/clients-logo/EM.jpg';
 import Sportistry from '@/public/assets/clients-logo/SportIstry.jpg';
+import IEMS from '@/public/assets/clients-logo/IEMS.png';
+import rkfitness from '@/public/assets/clients-logo/rkfitness.png';
 import Image from 'next/image';
 import ContactFormCard from '@/components/UI/ContactFormCard/ContactFormCard';
 
@@ -76,6 +78,22 @@ const Projects = [
       'A website providing best in quality Sports wear and equipments, at a reasonable price.',
     logo: Sportistry,
     thumbnail: Sportistry,
+  },
+  {
+    id: '9',
+    name: 'RK Fitness',
+    description:
+      'RK Fitness at Jamshedpur, empowering fitness enthusiasts with top-notch training and facilities',
+    logo: rkfitness,
+    thumbnail: rkfitness,
+  },
+  {
+    id: '10',
+    name: 'IEMS',
+    description:
+      'IEMS is a non-profit making Autonomous Non-Governmental Organization devoted to the development of skill and expertise of the persons engaged in the Environmental Management area',
+    logo: IEMS,
+    thumbnail: IEMS,
   },
 ];
 
