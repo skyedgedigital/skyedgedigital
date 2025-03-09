@@ -8,6 +8,8 @@ import DMTransport from '@/public/assets/clients-logo/DMTransport.jpeg';
 import MindmapAssociates from '@/public/assets/clients-logo/MindmapAssociates.jpeg';
 import Sportistry from '@/public/assets/clients-logo/SportIstry.jpg';
 import YatraMitra from '@/public/assets/clients-logo/YatraMitra.jpeg';
+import IEMS from '@/public/assets/clients-logo/IEMS.png';
+import rkfitness from '@/public/assets/clients-logo/rkfitness.png';
 
 const LogosScroll = () => {
   const brands = [
@@ -18,6 +20,8 @@ const LogosScroll = () => {
     { id: 5, image: YatraMitra, alt: 'Yatra Mitra' },
     { id: 6, image: MindmapAssociates, alt: 'Mindmap Associates' },
     { id: 7, image: Sportistry, alt: 'Sportistry' },
+    { id: 8, image: IEMS, alt: 'IEMS' },
+    { id: 9, image: rkfitness, alt: 'RK Fitness' },
   ];
 
   return (
